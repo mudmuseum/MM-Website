@@ -28,13 +28,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Deploy the website
         run: |
-          # apt install jq -y
           cd ${GITHUB_WORKSPACE}/catalyst/public
-          # find . -type f | xargs -I {} aws s3 cp {} s3://${AWS_S3_BUCKET}/
           aws s3 sync . s3://${AWS_S3_BUCKET}
           CF_ID=$(aws cloudfront list-distributions | jq -r '.DistributionList.Items[] | select(.Aliases.Items[] == "'${AWS_S3_BUCKET}'") | .Id')
-          echo "Found ${CF_ID}"
-          # aws cloudfront create-invalidation --distribution-id ${CF_ID} --paths "/*"
+          aws cloudfront create-invalidation --distribution-id ${CF_ID} --paths "/*"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
