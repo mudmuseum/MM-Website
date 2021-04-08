@@ -69,3 +69,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Additional files
+.prettierignore
+.prettierrc
+CHANGELOG.md
+README.md
+package-lock.json
