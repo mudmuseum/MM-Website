@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Deploy the website
         run: |
-          apt install jq -y
+          # apt install jq -y
           cd ${GITHUB_WORKSPACE}/catalyst/public
           # find . -type f | xargs -I {} aws s3 cp {} s3://${AWS_S3_BUCKET}/
           aws s3 sync s3://${AWS_S3_BUCKET} .
