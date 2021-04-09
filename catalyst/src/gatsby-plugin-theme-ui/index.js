@@ -3,7 +3,9 @@ import { BaseTheme } from "gatsby-theme-catalyst-core"
 import { tailwind, baseColors } from "@theme-ui/preset-tailwind"
 
 const theme = merge(BaseTheme, {
-  // Modifications to the base theme go here. This is an example changing colors and using variants to change your navigation links. Uncomment the code below to see what happens.
+  // Modifications to the base theme go here. This is an example changing 
+  // colors and using variants to change your navigation links. Uncomment 
+  // the code below to see what happens.
   colors: {
     ...tailwind.colors,
     background: baseColors.gray[1], //Try "#954264",
@@ -28,7 +30,8 @@ const theme = merge(BaseTheme, {
       links: baseColors.gray[8],
       icons: baseColors.gray[8],
     },
-    // You can delete dark mode by removing the "modes" object and setting useColorMode to false in gatsby-theme-catalyst-core
+    // You can delete dark mode by removing the "modes" object and setting 
+    // useColorMode to false in gatsby-theme-catalyst-core
     modes: {
       dark: {
         background: baseColors.gray[9],

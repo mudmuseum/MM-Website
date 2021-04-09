@@ -3,8 +3,8 @@ module.exports = {
     title: `Catalyst`,
     description: `Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Theme-UI. Incorporates gatsby-theme-catalyst-core, gatsby-theme-catalyst-header-top, and gatsby-theme-catalyst-footer.`,
     keywords: [`gatsby`, `theme`, `react`],
-    author: `Eric Howey`,
-    siteUrl: `https://gatsby-starter-catalyst.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
+    author: `Nicholas Warner`,
+    siteUrl: `https://mudmuseum.com`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       {
         name: `Left Link`,
@@ -12,8 +12,8 @@ module.exports = {
         location: `left`,
       },
       {
-        name: `Page 1`,
-        link: `/page-1/`,
+        name: `History`,
+        link: `/history/`,
         location: `right`,
       },
       {
