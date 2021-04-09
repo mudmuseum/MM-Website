@@ -1,15 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Catalyst`,
-    description: `Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Theme-UI. Incorporates gatsby-theme-catalyst-core, gatsby-theme-catalyst-header-top, and gatsby-theme-catalyst-footer.`,
-    keywords: [`gatsby`, `theme`, `react`],
+    title: `MudMuseum`,
+    description: `MudMuseum is a project meant to describe, archive, and make available Multi-User Dungeons (MUDs) that have been released to the public over the last 50 years.`,
+    keywords: [`mud`, `mudmuseum`, `museum`, `mmo`, `archive`],
     author: `Nicholas Warner`,
     siteUrl: `https://mudmuseum.com`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       {
-        name: `Left Link`,
-        link: `/left-link/`,
+        name: `About MudMuseum`,
+        link: `/aboutmudmuseum/`,
         location: `left`,
+      },
+      {
+        name: `Connect`,
+        link: `/#connect`,
+        location: `right`,
       },
       {
         name: `History`,
@@ -17,13 +22,8 @@ module.exports = {
         location: `right`,
       },
       {
-        name: `Anchor 1`,
-        link: `/#anchor-1`,
-        location: `right`,
-      },
-      {
-        name: `Page 2`,
-        link: `/page-2/`,
+        name: `Modern Muds`,
+        link: `/modernmuds/`,
         location: `right`,
         subMenu: [
           {
@@ -40,17 +40,17 @@ module.exports = {
     socialLinks: [
       {
         name: `Email`,
-        link: `eric@erichowey.dev`,
+        link: `nswarner2@gmail.com`,
         location: `footer`, //Options are "all", "header", "footer"
       },
       {
-        name: `Twitter`,
-        link: `https://twitter.com/erchwy`,
+        name: `LinkedIn`,
+        link: `https://www.linkedin.com/in/nswarner`,
         location: `header`, //Options are "all", "header", "footer"
       },
       {
         name: `Github`,
-        link: `https://www.github.com/ehowey`,
+        link: `https://www.github.com/mudmuseum`,
         location: `all`, //Options are "all", "header", "footer"
       },
     ],
